@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50,50,50,0.5)), url(images/img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+header nav a .logo:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: #f44336;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+}
+
+header nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #f44336;
+    border: 1px solid #f44336;
+    transition: 0.5s;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Faculties */
+.faculties {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.faculties .row {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.faculties-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.faculties-col img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 80%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.layer:hover h3 {
+    bottom: 41%;
+    opacity: 1;
+}
+
+/* Facilities */
+.facilities {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.facilities .row {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facilities-col {
+    flex-basis: 30%;
+    border: 1px solid #777;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.facilities-col img {
+    width: 100%;
+    height: 200px;
+    display: inline;
+    border: 1px solid #777;
+    border-radius: 10px 10px 0 0;
+}
+
+.facilities-col .text {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.facilities-col:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    color: #f44336;
+    box-shadow: 0 0 20px #f44336
+}
+
+/* testimonials */
+.testimonials {
+    width: 80%;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonials .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.testimonial {
+    border: 1px solid #777;
+    border-radius: 16px;
+    padding: 10px 5px; 
+    margin: 1px 1px;
+    text-align: center;
+}
+
+.testimonial p {
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+}
+
+/* Contact */
+.contact {
+    width: 100%;
+    margin: 50px 0 auto;
+    padding: 50px;
+    background-color: #777;
+    display: flex; 
+    justify-content: space-around;
+    color: #fff;
+}
+
+.contact .logo-col {
+    display: flex;
+    align-items: center;
+}
+
+.contact .logo-col a{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff;
+}
+
+.contact ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.contact .link-col ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact .link-col ul li a:hover {
+    color: #f44336;
+}
+
+.contact .social-media-col a {
+    color: #fff;
+    display: inline;
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+}
+
+.contact .social-media-col a i:hover {
+    transition: 0.3s;
+    transform: scale(1.5);
+    color: #f44336;
+}
+
+footer {
+    width: 100%;
+    padding: 50px auto;
+    background-color: black;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer i {
+    color: #f44336;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 778px) {
+
+    /* Header */
+    header nav .logo {
+        font-size: 1.2rem;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+    header .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    header .hero p {
+        font-size: 1rem;
+    }
+
+    header .hero .hero-btn {
+        font-size: 0.8rem;
+    }
+
+    /* Faculties */
+    .faculties .row {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* width: 600px; */
+        
+    }
+
+    /* Facilities */
+    .facilities .row {
+        flex-direction: column;
+    }
+
+    /* Testimonials */
+    .testimonials .row {
+        flex-wrap: wrap;
+    }
+
+    .testimonials .row .testimonial {
+        margin: 3px auto;
+    }
+
+    .testimonials .row .testimonial h4 {
+        font-size: 0.7rem;
+    }
+    .testimonials .row .testimonial p {
+        font-size: 0.7rem;
+    }
+
+    /* Contact */
+    .contact{
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    .contact h4 {
+        margin: 10px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
